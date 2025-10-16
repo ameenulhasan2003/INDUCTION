@@ -1,0 +1,13 @@
+      +--------------------+
+      | STM32 MCU          |
+      |                    |
+      |  PA0 → ADC Temp    |----[NTC / LM35 Sensor]
+      |  PB0 → PWM Out     |----> [Gate Driver Input] -----> [IGBT / MOSFET Half-Bridge] -----> Coil
+      |  PC0 → Mode Btn1   |----[Push button for Low/Med/High]
+      |  PC1 → Mode Btn2   |
+      |  PC2 → E-Stop      |----[Emergency Stop Switch, Pull-Up Enabled]
+      +--------------------+
+                  |
+                  | UART (optional for debugging)
+                  v
+               PC / LCD Display
